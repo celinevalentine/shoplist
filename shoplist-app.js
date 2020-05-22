@@ -10,10 +10,12 @@ $('ul').on('click', 'span', function(e) {
     e.stopPropagation();
 });
 //add text to input box
-$('.addItem').change(function() {
-    $('submitBtn').on(click, function(e) {
-        let shopText = $(this).val();
-        $(this).val('');
+$('.addItem').change(function(e) {
+    e.preventDefault();
+    $('#submitBtn').on('click', function(evt) {
+        evt.preventDefault();
+        let shopText = $('input').val();
+        $('input').val('');
         $('ul').append(`<li><span><i class='fa fa-trash'></i></span>${shopText}</li>`);
     });
 });
