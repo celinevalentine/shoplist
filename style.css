@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-    width: 360px;
+    width: 400px;
     margin: 100px auto;
     background-color: #f7f7f7;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
@@ -108,7 +108,7 @@ input #category {
 }
 
 #submitBtn {
-    float: right;
+    text-align: center;
 }
 
 input:focus {

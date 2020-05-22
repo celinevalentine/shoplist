@@ -12,21 +12,25 @@ $('ul').on('click', 'span', function(e) {
 //add text to input box
 $('.addItem').change(function(e) {
     e.preventDefault();
-    $('#submitBtn').on('click', function(evt) {
-        evt.preventDefault();
-        let shopText = $('input').val();
-        $('input').val('');
-        $('ul').append(`<li><span><i class='fa fa-trash'></i></span>${shopText}</li>`);
-    });
+    $('#submitBtn').on('click', matchCategory);
 });
 
 //toggle + sign on h1
 $('.fa-plus').click(function() {
-    $('#addText').fadeToggle();
+    $('#shopForm').fadeToggle();
 });
 
 //loop ul to match the category
 function matchCategory() {
-    let uls = $('div').children().class('.category');
-    console.log(uls);
+    let shopText = $('input').val();
+    $('input').val('');
+    let $option = $('option').val();
+    $('option').val('Pick 1 category');
+    let $uls = $('div').find('ul');
+    for (let matchedUl in $uls) {
+        if (matchedUl == $option) {
+            $('matchedUl').append(`<li><span><i class='fa fa-trash'></i></span>${shopText}</li>`);
+        }
+    }
 }
+matchCategory();
