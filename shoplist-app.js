@@ -28,7 +28,8 @@ function matchCategory() {
     $('option').val('Pick 1 category');
     let $uls = $('div').find('ul');
     for (let matchedUl in $uls) {
-        if (matchedUl == $option) {
+        let idName = matchedUl.attr('id');
+        if (idName == $option) {
             $('matchedUl').append(`<li><span><i class='fa fa-trash'></i></span>${shopText}</li>`);
         }
     }
