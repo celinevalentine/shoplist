@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grocery List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Grocery List <i class="fa fa-plus"></i></h1>
+        <form action="#" id="shopForm">
+            <input type="text" name="addItem" class="addItem" id="addText" placeholder="Add New Item">
+            <select class="addItem" id="category" name="items">
+                <option>pick 1 category</option>
+                <option value="fruit">fruit</option>
+                <option value="veggie">veggie</option>
+                <option value="frozen">frozen</option>
+                <option value="snacks">snacks</option>
+                <option value="sauce-noodle">sauce-noodle</option>
+                <option value="dairy">dairy</option>
+                <option value="others">others</option>
+              </select>
+            <input type="submit" id="submitBtn" value="Add to List">
+        </form>
+        <ul id='fruit'>
+            <li><span><i class="fa fa-trash"></i></span>strawberries</li>
+            <li><span><i class="fa fa-trash"></i></span>cherries</li>
+            <li><span><i class="fa fa-trash"></i></span>banana</li>
+        </ul>
+        <ul id='veggie'>
+            <li><span><i class="fa fa-trash"></i></span>mixed greens</li>
+            <li><span><i class="fa fa-trash"></i></span>celery</li>
+            <li><span><i class="fa fa-trash"></i></span>green beans</li>
+        </ul>
+        <ul id='frozen'>
+            <li><span><i class="fa fa-trash"></i></span>ground meat</li>
+            <li><span><i class="fa fa-trash"></i></span>finger food</li>
+            <li><span><i class="fa fa-trash"></i></span>pizza</li>
+            <li><span><i class="fa fa-trash"></i></span>frozen mango/mix berries</li>
+            <li><span><i class="fa fa-trash"></i></span>frozen peas</li>
+            <li><span><i class="fa fa-trash"></i></span>frozen corns</li>
+        </ul>
+        <ul id='snacks'>
+            <li><span><i class="fa fa-trash"></i></span>chips</li>
+            <li><span><i class="fa fa-trash"></i></span>hummus</li>
+        </ul>
+        <ul id='sauce-noodle'>
+            <li><span><i class="fa fa-trash"></i></span>gf pasta</li>
+            <li><span><i class="fa fa-trash"></i></span>pesto sauce</li>
+            <li><span><i class="fa fa-trash"></i></span>indian simmer sauce</li>
+        </ul>
+        <ul id='dairy'>
+            <li><span><i class="fa fa-trash"></i></span>milk</li>
+            <li><span><i class="fa fa-trash"></i></span>cheese</li>
+
+        </ul>
+        <ul id='others'>
+            <li><span><i class="fa fa-trash"></i></span>beer</li>
+
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="shoplist-app.js"></script>
+</body>
+
+</html>
