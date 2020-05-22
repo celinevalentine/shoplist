@@ -24,3 +24,9 @@ $('.addItem').change(function(e) {
 $('.fa-plus').click(function() {
     $('#addText').fadeToggle();
 });
+
+//loop ul to match the category
+function matchCategory() {
+    let uls = $('div').children().class('.category');
+    console.log(uls);
+}
