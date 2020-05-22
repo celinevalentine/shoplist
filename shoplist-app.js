@@ -26,12 +26,11 @@ function matchCategory() {
     $('input').val('');
     let $option = $('option').val();
     $('option').val('Pick 1 category');
-    let $uls = $('div').find('ul');
-    for (let matchedUl in $uls) {
-        let idName = matchedUl.attr('id');
-        if (idName == $option) {
+    let uls = $('div').find('ul');
+    $('uls').each(function() {
+        if ($(this).attr('id') == $option) {
             $('matchedUl').append(`<li><span><i class='fa fa-trash'></i></span>${shopText}</li>`);
         }
-    }
+    });
 }
 matchCategory();
